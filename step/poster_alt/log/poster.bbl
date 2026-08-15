@@ -1,0 +1,93 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{fischer2016}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1af4aa57356ac9ac509c70da3d44cfb9}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Yvonne},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Straße am Forum 2, D-76131 Karlsruhe}%
+      }
+      \list{publisher}{1}{%
+        {KIT Scientific Publishing}%
+      }
+      \strng{namehash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \strng{fullhash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \strng{bibnamehash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \strng{authorbibnamehash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \strng{authornamehash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \strng{authorfullhash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783731504603}
+      \field{title}{Wissensbasierte probalistische Modellierung für die Situationsanalyse am Beispiel der maritimen Überwachung}
+      \field{year}{2016}
+      \keyw{AIS}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{fischer2016}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1af4aa57356ac9ac509c70da3d44cfb9}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Yvonne},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Straße am Forum 2, D-76131 Karlsruhe}%
+      }
+      \list{publisher}{1}{%
+        {KIT Scientific Publishing}%
+      }
+      \strng{namehash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \strng{fullhash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \strng{bibnamehash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \strng{authorbibnamehash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \strng{authornamehash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \strng{authorfullhash}{1af4aa57356ac9ac509c70da3d44cfb9}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783731504603}
+      \field{title}{Wissensbasierte probalistische Modellierung für die Situationsanalyse am Beispiel der maritimen Überwachung}
+      \field{year}{2016}
+      \keyw{AIS}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
