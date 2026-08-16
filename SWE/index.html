@@ -1,48 +1,44 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset=utf-8">
-		<title>Bücherwelt</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
-	</head>
-	<body>
-	<div class="login">
-		<form>
-			<input type=text name=n placeholder=Benutzername>
-			<input type=text name=p placeholder=Passwort>
-			<input type=submit value=Login>
-		</form>		
-	</div>
-	<br>
-    <div class="header">         
-		<h1 align="center">Willkommen bei der Bücherwelt</h1>
-	</div>
-	<div class="search">
-		<form>
-			<input type=text name=s>
-			<input type=submit value=Suche>
-		</form>
-	</div>
-		<table>
-			<tr>
-				<td><img src="img/zur_see.jpg"><br>Zur See<br>Hansen, Dörte<br>Roman<br>23,99€</td>
-				<td><img src="img/die_suche_nach_heimat.jpg"><br>Die Suche nach Heimat<br>Janos, Indra Maria<br>Roman<br>17,50€</td>
-				<td><img src="img/der_halbmörder.jpg"><br>Der Halbmörder<br>Nesser, Håkan<br>Roman<br>21,99€</td>
-				<td><img src="img/stella_maris.jpg"><br>Stella Maris<br>McCarthy, Cormac<br>Roman<br>23,99€</td>
-				<td><img src="img/kummer_aller_art.jpg"><br>Kummer aller Art<br>Leky, Mariana<br>Roman<br>21,99€</td>
-				<td><img src="img/zur_see.jpg"><br>Zur See<br>Hansen, Dörte<br>Roman<br>23,99€</td>
-			</tr>
-			<tr>
-				<td><img src="img/zur_see.jpg">Zur See<br>Hansen, Dörte<br>Roman<br>23,99€</td>
-				<td><img src="img/die_suche_nach_heimat.jpg"><br>Die Suche nach Heimat<br>Janos, Indra Maria<br>Roman<br>17,50€</td>
-				<td><img src="img/der_halbmörder.jpg"><br>Der Halbmörder<br>Nesser, Håkan<br>Roman<br>21,99€</td>
-				<td><img src="img/stella_maris.jpg"><br>Stella Maris<br>McCarthy, Cormac<br>Roman<br>23,99€</td>
-				<td><img src="img/kummer_aller_art.jpg"><br>Kummer aller Art<br>Leky, Mariana<br>Roman<br>21,99€</td>
-				<td><img src="img/zur_see.jpg"><br>Zur See<br>Hansen, Dörte<br>Roman<br>23,99€</td>
-			</tr>
-		</table>
-    <div class="footer">         
-		<a href="impressum.html">Über uns</a>
-	</div>	
-	</body>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bücherwelt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-topbar">
+        <form class="inline-form" action="login.sh" method="get">
+          <input type="text" name="n" placeholder="Benutzername" required>
+          <input type="password" name="p" placeholder="Passwort" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Buecherwelt Team12</p>
+        <h1>Willkommen bei der Buecherwelt</h1>
+        <p>Suche in unserem aktuellen Buchbestand und verwalte Titel nach dem Login.</p>
+        <form class="search-form" action="Bücherwelt.sh" method="get">
+          <input type="text" name="s" placeholder="Titel, Autor oder Genre suchen ...">
+          <button type="submit">Suche starten</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="content-shell">
+      <section class="info-card">
+        <h2>Was ist neu?</h2>
+        <p>Die neue Version nutzt ein aufgeraeumtes Design und robustere CGI-Skripte fuer Login, Suche, Hinzufuegen und Entfernen von Buechern.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="impressum.html">Ueber uns</a>
+    </footer>
+  </body>
 </html>

@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
-let g:netrw_dirhist_4='/home/step2022team12/step/poster'
-let g:netrw_dirhist_3='/home/step2022team12/step/poster/bibtex'
-let g:netrw_dirhist_2='/home/step2022team12/step/poster_alt'
-let g:netrw_dirhist_1='/home/step2022team12/SWE/220123/Bücherwelt'
