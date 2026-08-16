@@ -44,21 +44,39 @@ cat <<'HTML'
   </head>
   <body>
     <header class="hero">
-      <div class="hero-topbar">
-        <form class="inline-form" action="login.sh" method="get">
-          <input type="text" name="n" placeholder="Benutzername" required>
-          <input type="password" name="p" placeholder="Passwort" required>
-          <button type="submit">Login</button>
-        </form>
-      </div>
+      <div class="hero-layout">
       <div class="hero-content">
         <p class="eyebrow">Buecherwelt Katalog</p>
         <h1>Buecher entdecken</h1>
-        <p>Suche nach Titel, Autor oder Genre und finde schnell den passenden Eintrag.</p>
-        <form class="search-form" action="Bücherwelt.sh" method="get">
+        <p>Filtern funktioniert ohne Login. Login und Registrierung sind rechts fuer Verwaltungsfunktionen.</p>
+        <form class="search-form" action="buecherwelt.sh" method="get">
           <input type="text" name="s" placeholder="Suchbegriff eingeben ...">
           <button type="submit">Filtern</button>
         </form>
+        <div class="catalog-actions">
+          <a class="cta-link" href="buecherwelt.sh">Alle Buecher anzeigen</a>
+        </div>
+      </div>
+
+      <aside class="auth-panel">
+        <section class="auth-card">
+          <h2>Login</h2>
+          <form class="auth-form" action="login.sh" method="get">
+            <input type="text" name="n" placeholder="Benutzername" required>
+            <input type="password" name="p" placeholder="Passwort" required>
+            <button type="submit">Login</button>
+          </form>
+        </section>
+
+        <section class="auth-card">
+          <h2>Registrierung</h2>
+          <form class="auth-form" action="register.sh" method="get">
+            <input type="text" name="rn" placeholder="Neuer Benutzername" required>
+            <input type="password" name="rp" placeholder="Neues Passwort" required>
+            <button type="submit">Registrieren</button>
+          </form>
+        </section>
+      </aside>
       </div>
     </header>
     <main class="catalog-shell">

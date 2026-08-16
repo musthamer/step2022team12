@@ -34,15 +34,11 @@ body {
 	box-shadow: var(--shadow);
 }
 
-.hero-topbar {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.inline-form {
-	display: flex;
-	gap: 8px;
-	flex-wrap: wrap;
+.hero-layout {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 320px;
+	gap: 18px;
+	align-items: start;
 }
 
 .hero-content {
@@ -82,6 +78,50 @@ h2 {
 	display: flex;
 	gap: 8px;
 	flex-wrap: wrap;
+}
+
+.catalog-actions {
+	margin-top: 10px;
+}
+
+.cta-link {
+	display: inline-block;
+	padding: 10px 14px;
+	border-radius: 11px;
+	background: rgba(255, 255, 255, 0.2);
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.45);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.cta-link:hover {
+	text-decoration: none;
+	background: rgba(255, 255, 255, 0.28);
+}
+
+.auth-panel {
+	display: grid;
+	gap: 10px;
+}
+
+.auth-card {
+	background: rgba(255, 255, 255, 0.14);
+	border: 1px solid rgba(255, 255, 255, 0.32);
+	border-radius: 14px;
+	padding: 12px;
+	backdrop-filter: blur(3px);
+}
+
+.auth-card h2 {
+	margin: 0 0 10px;
+	font-size: 1.1rem;
+	color: #fff;
+}
+
+.auth-form {
+	display: grid;
+	gap: 8px;
 }
 
 input[type="text"],
@@ -207,17 +247,17 @@ a:hover {
 		padding: 16px;
 	}
 
-	.hero-topbar {
-		justify-content: flex-start;
+	.hero-layout {
+		grid-template-columns: 1fr;
 	}
 
-	.inline-form,
+	.auth-form,
 	.search-form {
 		width: 100%;
 	}
 
-	.inline-form input,
-	.inline-form button,
+	.auth-form input,
+	.auth-form button,
 	.search-form input,
 	.search-form button {
 		width: 100%;
